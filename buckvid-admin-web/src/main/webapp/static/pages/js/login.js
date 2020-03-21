@@ -1,9 +1,9 @@
 var Login = function() {
 
-	// 构建登录对象
+	// initialize login instance
     var handleLogin = function() {
 
-    	// jquery-form-validate 前端的验证框架
+    	// jquery-form-validate front-end
         $('.login-form').validate({
             errorElement: 'span', //default input error message container
             errorClass: 'help-block', // default input error message class
@@ -19,14 +19,14 @@ var Login = function() {
 
             messages: {
                 username: {
-                    required: "用户名不能为空."
+                    required: "Username is required."
                 },
                 password: {
-                    required: "密码不能为空."
+                    required: "Password is required."
                 }
             },
 
-            highlight: function(element) { // hightlight error inputs
+            highlight: function(element) { // highlight error inputs
                 $(element).closest('.form-group').addClass('has-error'); // set error class to the control group
             },
 
@@ -45,11 +45,11 @@ var Login = function() {
             	var hdnContextPath = $("#hdnContextPath").val();
             	loginForm.ajaxSubmit({
             		dataType: "json",
-                    type: "post", // 提交方式 get/post
-                    url: hdnContextPath + '/users/login.action', // 需要提交的 url
+                    type: "post", //  get/post
+                    url: hdnContextPath + '/users/login.action', // url to submit
                     data: loginForm.serialize(),
                     success: function(data) {
-                        // 登录成功或者失败的提示信息
+                        // Notice msg
                         if (data.status == 200 && data.msg == "OK") {
                         	window.location.href = hdnContextPath + "/center.action";
                         } else {

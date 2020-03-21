@@ -20,62 +20,62 @@
                     </div>
                 </li>
                 
-               	<!-- 控制台  start -->
+               	<!-- Panel  start -->
                	<li class="nav-item">
                 	<a href="<%=request.getContextPath() %>/">
                     	<i class="icon-home"></i>
-                        	<span class="title">首页</span>
+                        	<span class="title">Home</span>
 					</a>
                	</li>
                	
-               	<!-- 用户管理 start -->
+               	<!-- User Management start -->
 				<li class="nav-item ">
                     <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-user"></i>
-                        <span class="title">用户信息</span>
+                        <span class="title">User Info</span>
 						<span class="arrow"></span>
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item ">
                             <a href="<%=request.getContextPath() %>/users/showList.action" class="ajaxify nav-link ">
-                                <span class="title">用户列表</span>
+                                <span class="title">User List</span>
                             </a>
                         </li>
                     </ul>
                	</li>
                	
-               	<!-- 背景音乐 start -->
+               	<!-- BGM start -->
 				<li class="nav-item ">
                     <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-basket-loaded"></i>
-                        <span class="title">bgm管理</span>
+                        <span class="title">BGM Management</span>
 						<span class="arrow"></span>
                     </a>
                     <ul class="sub-menu">
 						<li class="nav-item ">
                             <a id="bgmListMenu" href="<%=request.getContextPath() %>/video/showBgmList.action" class="ajaxify nav-link " id="bgmListMenu">
-                                <span class="title">bgm列表</span>
+                                <span class="title">BGM List</span>
                             </a>
                         </li>
                         <li class="nav-item ">
                             <a href="<%=request.getContextPath() %>/video/showAddBgm.action" class="ajaxify nav-link ">
-                                <span class="title">添加bgm</span>
+                                <span class="title">Add BGM</span>
                             </a>
                         </li>
                     </ul>
                	</li>
                	
-               	<!-- 举报管理 start -->
+               	<!-- Report Management start -->
 				<li class="nav-item ">
                     <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-notebook"></i>
-                        <span class="title">举报管理</span>
+                        <span class="title">Report Management</span>
 						<span class="arrow"></span>
                     </a>
                     <ul class="sub-menu">
 						<li class="nav-item ">
                             <a href="<%=request.getContextPath() %>/video/showReportList.action" class="ajaxify nav-link ">
-                                <span class="title">举报列表</span>
+                                <span class="title">Report List</span>
                             </a>
                         </li>
                     </ul>

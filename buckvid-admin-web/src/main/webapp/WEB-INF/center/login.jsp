@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>  
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
-    <title>短视频后台管理系统</title>
+    <title>Buckvid Admin Portal</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="leechenxiang" name="author" />
+    <meta content="Chang Liu" name="author" />
     
     <link href="<%=request.getContextPath() %>/static/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="<%=request.getContextPath() %>/static/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -54,23 +54,23 @@
 
                 <div class="form-group">
                     <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-                    <label class="control-label visible-ie8 visible-ie9">用户名</label>
+                    <label class="control-label visible-ie8 visible-ie9">Username</label>
                     <div id="input-error">
-                    	<input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="用户名" name="username" /> </div>
+                    	<input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username" /> </div>
                     </div>
                 <div class="form-group">
-                    <label class="control-label visible-ie8 visible-ie9">密码</label>
+                    <label class="control-label visible-ie8 visible-ie9">Password</label>
                     <div id="input-error">
-                    	<input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="密码" name="password" /> </div>
+                    	<input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password" /> </div>
                     </div>
                 
                 
                 <div class="form-actions" style="padding: 0 30px 15px;">
-                    <button type="submit" class="btn red btn-block uppercase">登 录</button>
+                    <button type="submit" class="btn red btn-block uppercase">Login</button>
                 </div>
                 <div class="create-account">
                     <p>
-                        <a href="javascript:;" class="btn-primary btn" id="register-btn">注 册 用 户</a>
+                        <a href="javascript:;" class="btn-primary btn" id="register-btn">Sign Up</a>
                     </p>
                 </div>
             </form>
@@ -79,19 +79,19 @@
             <!-- BEGIN REGISTRATION FORM -->
             <form class="register-form">
                 <div class="form-group">
-                    <label class="control-label visible-ie8 visible-ie9">用户名</label>
+                    <label class="control-label visible-ie8 visible-ie9">Username</label>
                     <div id="input-error">
-                    	<input class="form-control placeholder-no-fix" type="text" placeholder="用户名" name="username" />
+                    	<input class="form-control placeholder-no-fix" type="text" placeholder="Username" name="username" />
                     </div> 
                 </div>
                 <div class="form-group">
-                    <label class="control-label visible-ie8 visible-ie9">密码</label>
+                    <label class="control-label visible-ie8 visible-ie9">Password</label>
                     <div id="input-error">
-                    	<input class="form-control placeholder-no-fix" type="text" placeholder="密码" name="password" />
+                    	<input class="form-control placeholder-no-fix" type="text" placeholder="Password" name="password" />
                     </div> 
                 </div>
                 <div class="form-actions">
-                    <button type="button" id="register-back-btn" class="btn btn-default">返 回</button>
+                    <button type="button" id="register-back-btn" class="btn btn-default">Back</button>
                 </div>
             </form>
             <!-- END REGISTRATION FORM -->
